@@ -502,7 +502,7 @@
 
         // ─── CONFIGURATION ──────────────────────────────────────────────────────────
         // ↓↓ REPLACE THIS with your deployed Google Apps Script Web App URL ↓↓
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxmbPFhxGgXBYHNRMk0SMryFxnrbJh7f1LTejfhF6UdOWxaeB2vZLYNNW5lP6ou_Rlb/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzgjSKQPHWwyp4K0--aTXFEtNoSsT5nHlJ12ZN3XsdkkQFNsMJGqzStuctAqBkFT5xf/exec';
         // ↑↑ e.g. 'https://script.google.com/macros/s/AKfycb.../exec'       ↑↑
 
         // Central API helper — all reads/writes go through Apps Script
@@ -1453,11 +1453,7 @@
                     <button className="btn-secondary" style={{ width: '100%', marginTop: '10px' }} onClick={onPublicView}>
                         View Public Website
                     </button>
-                    {(!SCRIPT_URL || SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbxmbPFhxGgXBYHNRMk0SMryFxnrbJh7f1LTejfhF6UdOWxaeB2vZLYNNW5lP6ou_Rlb/exec') && (
-                        <div style={{ marginTop: '16px', padding: '12px', background: '#fff5f5', border: '1px solid #fc8181', borderRadius: '8px', color: '#742a2a', fontSize: '12px', lineHeight: '1.5' }}>
-                            <strong>⚠ Not Configured:</strong> Open <code>bushwalk.html</code> and set <code>SCRIPT_URL</code> at the top of the script section with your Google Apps Script Web App URL.
-                        </div>
-                    )}
+
                 </div>
             );
         };
